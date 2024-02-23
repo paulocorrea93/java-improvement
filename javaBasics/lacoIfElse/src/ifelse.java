@@ -18,22 +18,37 @@ public class ifelse {
 
 //        exercício 02 - determinar faixa etária por idade
 
-        System.out.println("Quantos anos você tem?");
-        int idade = tecla.nextInt();
+//        System.out.println("Quantos anos você tem?");
+//        int idade = tecla.nextInt();
+//
+//        if(idade >= 0 && idade < 4){
+//            System.out.println("Bebê");
+//        } else if(idade >= 4 && idade < 13){
+//            System.out.println("Criança.");
+//        } else if(idade >= 13 && idade < 18){
+//            System.out.println("Adolescente.");
+//        } else if(idade >= 18 && idade < 60){
+//            System.out.println("Adulto.");
+//        } else if(idade > 60){
+//            System.out.println("Idoso.");
+//        } else {
+//            System.out.println("Digite uma idade válida.");
+//        }
 
-        if(idade >= 0 && idade < 4){
-            System.out.println("Bebê");
-        } else if(idade >= 4 && idade < 13){
-            System.out.println("Criança.");
-        } else if(idade >= 13 && idade < 18){
-            System.out.println("Adolescente.");
-        } else if(idade >= 18 && idade < 60){
-            System.out.println("Adulto.");
-        } else if(idade > 60){
-            System.out.println("Idoso.");
+
+//        exercício 03 - definir se o numero é positivo, negativo ou neutro
+
+        System.out.println("Digite um número:");
+        int num = tecla.nextInt();
+
+        if(num < 0){
+            System.out.println(num + " é um número negativo.");
+        } else if(num > 0){
+            System.out.println(num + " é positivo.");
         } else {
-            System.out.println("Digite uma idade válida.");
+            System.out.println("zero é neutro.");
         }
+
 
     }
 }
