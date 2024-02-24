@@ -38,17 +38,36 @@ public class ifelse {
 
 //        exercício 03 - definir se o numero é positivo, negativo ou neutro
 
-        System.out.println("Digite um número:");
-        int num = tecla.nextInt();
+//        System.out.println("Digite um número:");
+//        int num = tecla.nextInt();
+//
+//        if(num < 0){
+//            System.out.println(num + " é um número negativo.");
+//        } else if(num > 0){
+//            System.out.println(num + " é positivo.");
+//        } else {
+//            System.out.println("zero é neutro.");
+//        }
 
-        if(num < 0){
-            System.out.println(num + " é um número negativo.");
-        } else if(num > 0){
-            System.out.println(num + " é positivo.");
+
+//        exercício 04 - maior de 3 com if/else
+
+        System.out.println("Digite o primeiro número: ");
+        int num1 = tecla.nextInt();
+
+        System.out.println("Digite o segundo número: ");
+        int num2 = tecla.nextInt();
+
+        System.out.println("Digite o terceiro número: ");
+        int num3 = tecla.nextInt();
+
+        if(num1 > num2 && num1 > num3){
+            System.out.println(num1 + " é maior que " + num2 + " e " + num3);
+        } else if(num2 > num1 && num2 > num3){
+            System.out.println(num2 + " é maior que " + num1 + " e " + num3);
         } else {
-            System.out.println("zero é neutro.");
+            System.out.println(num3 + " é maior que " + num1 + " e " + num2);
         }
-
 
     }
 }
