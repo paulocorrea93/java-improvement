@@ -52,22 +52,42 @@ public class ifelse {
 
 //        exercício 04 - maior de 3 com if/else
 
-        System.out.println("Digite o primeiro número: ");
-        int num1 = tecla.nextInt();
+//        System.out.println("Digite o primeiro número: ");
+//        int num1 = tecla.nextInt();
+//
+//        System.out.println("Digite o segundo número: ");
+//        int num2 = tecla.nextInt();
+//
+//        System.out.println("Digite o terceiro número: ");
+//        int num3 = tecla.nextInt();
+//
+//        if(num1 > num2 && num1 > num3){
+//            System.out.println(num1 + " é maior que " + num2 + " e " + num3);
+//        } else if(num2 > num1 && num2 > num3){
+//            System.out.println(num2 + " é maior que " + num1 + " e " + num3);
+//        } else {
+//            System.out.println(num3 + " é maior que " + num1 + " e " + num2);
+//        }
 
-        System.out.println("Digite o segundo número: ");
-        int num2 = tecla.nextInt();
+//        exercício 05 - maior de 3 com array
 
-        System.out.println("Digite o terceiro número: ");
-        int num3 = tecla.nextInt();
+        int[] numeros = new int[3];
 
-        if(num1 > num2 && num1 > num3){
-            System.out.println(num1 + " é maior que " + num2 + " e " + num3);
-        } else if(num2 > num1 && num2 > num3){
-            System.out.println(num2 + " é maior que " + num1 + " e " + num3);
-        } else {
-            System.out.println(num3 + " é maior que " + num1 + " e " + num2);
+        for(int i = 0; i < 3; i++){
+            System.out.println("Digite o número " + (i+1) + ": ");
+            numeros[i] = tecla.nextInt();
         }
+
+        int maiorNumero = numeros[0];
+        for(int i = 1; i < 3; i++){
+            if(numeros[i] > maiorNumero){
+                maiorNumero = numeros[i];
+            }
+        }
+
+        System.out.println("O maior número é: " + maiorNumero);
+
+        tecla.close();
 
     }
 }
