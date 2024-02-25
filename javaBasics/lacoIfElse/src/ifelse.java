@@ -92,20 +92,33 @@ public class ifelse {
 
 //    exercicio 06 - validação de senha
 
-        System.out.println("Crie uma senha:");
-        String novaSenha = tecla.next();
+//        System.out.println("Crie uma senha:");
+//        String novaSenha = tecla.next();
+//
+//        System.out.println("Digite sua senha: ");
+//        String senha = tecla.next();
+//
+//        if(novaSenha.equals(senha)){
+//            System.out.println("Logado com sucesso.");
+//        } else {
+//            System.out.println("Senha incorreta.");
+//        }
 
-        System.out.println("Digite sua senha: ");
-        String senha = tecla.next();
-
-        if(novaSenha.equals(senha)){
-            System.out.println("Logado com sucesso.");
+//        exercício 06 - definindo se é vogal ou consoante
+//        String a = "a";
+//        String e = "e";
+//        String i = "i";
+//        String o = "o";
+//        String u = "u";
+//
+//        System.out.println("Digite uma letra: ");
+//        String vogalOuConsoante = tecla.nextLine();
+//
+//        if(vogalOuConsoante.equals(a) || vogalOuConsoante.equals(e) || vogalOuConsoante.equals(i) || vogalOuConsoante.equals(o) || vogalOuConsoante.equals(u)){
+//            System.out.println("Vogal");
         } else {
-            System.out.println("Senha incorreta.");
+            System.out.println("Consoante");
         }
-
-
-
 
     }
 }
