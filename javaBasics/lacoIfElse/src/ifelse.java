@@ -1,3 +1,4 @@
+import java.util.Objects;
 import java.util.Scanner;
 
 public class ifelse {
@@ -71,23 +72,40 @@ public class ifelse {
 
 //        exercício 05 - maior de 3 com array
 
-        int[] numeros = new int[3];
+//        int[] numeros = new int[3];
+//
+//        for(int i = 0; i < 3; i++){
+//            System.out.println("Digite o número " + (i+1) + ": ");
+//            numeros[i] = tecla.nextInt();
+//        }
+//
+//        int maiorNumero = numeros[0];
+//        for(int i = 1; i < 3; i++){
+//            if(numeros[i] > maiorNumero){
+//                maiorNumero = numeros[i];
+//            }
+//        }
+//
+//        System.out.println("O maior número é: " + maiorNumero);
+//
+//        tecla.close();
 
-        for(int i = 0; i < 3; i++){
-            System.out.println("Digite o número " + (i+1) + ": ");
-            numeros[i] = tecla.nextInt();
+//    exercicio 06 - validação de senha
+
+        System.out.println("Crie uma senha:");
+        String novaSenha = tecla.next();
+
+        System.out.println("Digite sua senha: ");
+        String senha = tecla.next();
+
+        if(novaSenha.equals(senha)){
+            System.out.println("Logado com sucesso.");
+        } else {
+            System.out.println("Senha incorreta.");
         }
 
-        int maiorNumero = numeros[0];
-        for(int i = 1; i < 3; i++){
-            if(numeros[i] > maiorNumero){
-                maiorNumero = numeros[i];
-            }
-        }
 
-        System.out.println("O maior número é: " + maiorNumero);
 
-        tecla.close();
 
     }
 }
