@@ -67,21 +67,47 @@ public class Main {
 //        Crie um programa que avalie três números, x, y, e z. Utilize a estrutura de controle de fluxo para determinar
 //        qual é o maior dos três números.
 
-        System.out.println("Digite o primeiro numero:");
-        int num1 = tecla.nextInt();
+//        System.out.println("Digite o primeiro numero:");
+//        int num1 = tecla.nextInt();
+//
+//        System.out.println("Digite o segundo número:");
+//        int num2 = tecla.nextInt();
+//
+//        System.out.println("Digite o terceiro número");
+//        int num3 = tecla.nextInt();
+//
+//        if(num1 > num2 && num1 > num3){
+//            System.out.println(num1 + " é o maior que " + num2 + " e " + num3);
+//        } else if(num2 > num1 && num2 > num3){
+//            System.out.println(num2 + " é o maior que " + num1 + " e " + num3);
+//        } else {
+//            System.out.println(num3 + " é o maior que " + num1 + " e " + num2);
+//        }
 
-        System.out.println("Digite o segundo número:");
-        int num2 = tecla.nextInt();
+//        Desenvolva um programa que classifique um aluno com base em sua média de notas. Utilize a estrutura if-else
+//        para imprimir "Aprovado" se a média for igual ou superior a 7, "Recuperação" se a média estiver entre 5 e 7,
+//        e "Reprovado" se a média for inferior a 5.
 
-        System.out.println("Digite o terceiro número");
-        int num3 = tecla.nextInt();
+        System.out.println("Qual foi sua média no primeiro bimestre?");
+        double bim1 = tecla.nextDouble();
 
-        if(num1 > num2 && num1 > num3){
-            System.out.println(num1 + " é o maior que " + num2 + " e " + num3);
-        } else if(num2 > num1 && num2 > num3){
-            System.out.println(num2 + " é o maior que " + num1 + " e " + num3);
+        System.out.println("Qual foi sua média no segundo bimestre?");
+        double bim2 = tecla.nextDouble();
+
+        System.out.println("Qual foi sua média no terceiro bimestre?");
+        double bim3 = tecla.nextDouble();
+
+        System.out.println("Qual foi sua média no quartos bimestre?");
+        double bim4 = tecla.nextDouble();
+
+        double media = (bim1+bim2+bim3+bim4)/4;
+
+        if(media >= 7){
+            System.out.println("Sua média foi " + media + " você foi aprovado.");
+        } else if (media >= 5 && media <= 6){
+            System.out.println("Sua média foi " + media + " você está de recuperação");
         } else {
-            System.out.println(num3 + " é o maior que " + num1 + " e " + num2);
+            System.out.println("Sua média foi " + media + " você foi reprovado.");
         }
 
 
