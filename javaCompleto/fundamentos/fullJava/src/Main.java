@@ -43,25 +43,45 @@ public class Main {
 //        contendo um valor de 1 a 7 (onde 1 é domingo e 7 é sábado), imprima o nome do dia correspondente.
 
 
-        System.out.println("Digite o número do dia da semana:");
-        int dia = tecla.nextInt();
+//        System.out.println("Digite o número do dia da semana:");
+//        int dia = tecla.nextInt();
+//
+//        switch (dia){
+//            case 1 : System.out.println("Doming");
+//            break;
+//            case 2 : System.out.println("Segunda");
+//            break;
+//            case 3 : System.out.println("Terça");
+//            break;
+//            case 4 : System.out.println("Quarta");
+//            break;
+//            case 5 : System.out.println("Quinta");
+//            break;
+//            case 6 : System.out.println("Sexta");
+//            break;
+//            case 7 : System.out.println("Sábado");
+//            break;
+//            default : System.out.println("Digite um núemro de 1 a 7");
+//        }
 
-        switch (dia){
-            case 1 : System.out.println("Doming");
-            break;
-            case 2 : System.out.println("Segunda");
-            break;
-            case 3 : System.out.println("Terça");
-            break;
-            case 4 : System.out.println("Quarta");
-            break;
-            case 5 : System.out.println("Quinta");
-            break;
-            case 6 : System.out.println("Sexta");
-            break;
-            case 7 : System.out.println("Sábado");
-            break;
-            default : System.out.println("Digite um núemro de 1 a 7");
+//        Crie um programa que avalie três números, x, y, e z. Utilize a estrutura de controle de fluxo para determinar
+//        qual é o maior dos três números.
+
+        System.out.println("Digite o primeiro numero:");
+        int num1 = tecla.nextInt();
+
+        System.out.println("Digite o segundo número:");
+        int num2 = tecla.nextInt();
+
+        System.out.println("Digite o terceiro número");
+        int num3 = tecla.nextInt();
+
+        if(num1 > num2 && num1 > num3){
+            System.out.println(num1 + " é o maior que " + num2 + " e " + num3);
+        } else if(num2 > num1 && num2 > num3){
+            System.out.println(num2 + " é o maior que " + num1 + " e " + num3);
+        } else {
+            System.out.println(num3 + " é o maior que " + num1 + " e " + num2);
         }
 
 
