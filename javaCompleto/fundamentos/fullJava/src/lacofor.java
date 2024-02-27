@@ -24,12 +24,43 @@ public class lacofor {
 //            System.out.println(i);
 //        }
 
-        int num = 0;
+//        int num = 0;
+//
+//        for (int i = 0; i <= 10; i++) {
+//            num = i * 5;
+//            System.out.println(i + " x 5 = " + num);
+//        }
 
-        for (int i = 0; i <= 10; i++) {
-            num = i * 5;
-            System.out.println(i + " x 5 = " + num);
+
+//        exercício 01 - 5 primeiros números primos
+
+        int[] numPri = new int[5];
+        int count = 0;
+
+        for (int i = 2; count < 5; i++) {
+            if (isPrimo(i)) {
+                numPri[count] = i;
+                count++;
+            }
         }
+
+        System.out.println("Os 5 primeiros números primos são: ");
+        for (int primo : numPri) {
+            System.out.println(primo);
+        }
+
+    }
+
+    private static boolean isPrimo(int num) {
+        if (num < 2) {
+            return false;
+        }
+        for (int i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0) {
+                return false;
+            }
+        }
+        return true;
     }
 
 }
