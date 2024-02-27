@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class ifelse {
     public static void main(String[] args) {
 
         Scanner tecla = new Scanner(System.in);

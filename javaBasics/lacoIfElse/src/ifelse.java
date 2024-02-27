@@ -1,3 +1,5 @@
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Objects;
 import java.util.Scanner;
 
@@ -116,9 +118,24 @@ public class ifelse {
 //
 //        if(vogalOuConsoante.equals(a) || vogalOuConsoante.equals(e) || vogalOuConsoante.equals(i) || vogalOuConsoante.equals(o) || vogalOuConsoante.equals(u)){
 //            System.out.println("Vogal");
-        } else {
-            System.out.println("Consoante");
-        }
+//        } else {
+//            System.out.println("Consoante");
+//        }
+
+//        exercício 07 - bonus de 10% no salario
+
+//        System.out.println("Informe o valor do seu salário: ");
+//        double valor = tecla.nextDouble();
+//        BigDecimal salarioDecimal = new BigDecimal(valor);
+//
+//        if(valor > 1000){
+//            BigDecimal novoSalario = salarioDecimal.setScale(2, RoundingMode.CEILING);
+//            System.out.println("Você ganhou um bonus de 10%, seu salario agora é: " + novoSalario);
+//        } else {
+//            System.out.println("Seu salario permanece o mesmo, esse mês");
+//        }
+
+
 
     }
 }
